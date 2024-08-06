@@ -1,0 +1,19 @@
+{
+  "name": "nodeauth",
+  "version": "1.0.0",
+  "description": "This project is a Node.js-based user authentication system designed with Clean Architecture principles. It aims to provide a robust, scalable, and maintainable solution for managing user authentication in web applications.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  }
+}
